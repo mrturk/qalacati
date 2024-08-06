@@ -7,8 +7,27 @@
 .homeContent {
   min-height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-xxl {
-  max-width: max-content !important;
+  max-width: 100% !important;
+}
+
+.menuTab {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+
+.scroll-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-scroll-container {
+  max-width: 750px;
+  width: 100%;
 }

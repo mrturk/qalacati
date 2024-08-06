@@ -2,7 +2,10 @@ import MainLayout from "@/components/layouts/MainLayout";
 import "./globals.css";
 
 export const metadata = {
-  title: "Q Alaçatı",
+  title: {
+    template: "%s | Q Alaçatı",
+    default: "Q Alaçatı",
+  },
   description: "",
 };
 
