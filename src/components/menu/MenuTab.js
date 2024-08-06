@@ -6,7 +6,7 @@ import ScrollContainer from "react-indiana-drag-scroll";
 const MenuTab = () => {
   const tabRef = useRef(null);
   const handleTabClick = (e, index) => {
-    if (index % 3 === 0) {
+    if (index > 2) {
       const tabWidth = e.currentTarget.offsetWidth;
       const scrollTo = index * tabWidth;
       tabRef.current.scrollTo({
@@ -59,7 +59,7 @@ const MenuTab = () => {
         </ScrollContainer>
       </div>
       <div className="tab-content">
-        {[...Array(20)].map((_, index) => {
+        {[...Array(50)].map((_, index) => {
           return (
             <div
               id={`tab-${index + 1}`}
