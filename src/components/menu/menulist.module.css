@@ -1,0 +1,13 @@
+.tabList {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+
+.tabList > li > button {
+  color: black;
+  border: 0;
+  background-color: transparent;
+  width: fit-content;
+  padding: 0px 50px 0px 50px;
+}

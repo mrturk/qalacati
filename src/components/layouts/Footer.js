@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{ marginTop: "40px" }}>
       {/* Container */}
       <div className="container">
         <div className="row">
@@ -49,7 +49,7 @@ const Footer = () => {
               <a href="">
                 <img
                   className="footer_logo"
-                  src="images/footer_logo.png"
+                  src="/images/footer_logo.png"
                   alt="Burger"
                 />
               </a>
