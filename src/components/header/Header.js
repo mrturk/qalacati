@@ -75,12 +75,12 @@ const Header = () => {
                   kaliteli malzemelerle ve büyük bir titizlikle hazırlanmıştır.
                   Sevdiklerinizle birlikte hoş bir yemek deneyimi yaşayın.
                 </p>
-                <a
-                  href=""
+                <Link
+                  href="/menu"
                   className="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
                 >
                   Menüye Git
-                </a>
+                </Link>
               </div>
               <div className="col-lg-6 text-center text-lg-end overflow-hidden">
                 <img className="img-fluid" src="/img/hero.png" alt="" />
