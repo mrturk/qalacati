@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: false,
   trailingSlash: true,
-  output: "export",
 };
 
 export default nextConfig;

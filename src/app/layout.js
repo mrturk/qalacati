@@ -1,5 +1,6 @@
 import MainLayout from "@/components/layouts/MainLayout";
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: {
@@ -13,56 +14,52 @@ export default function RootLayout({ children }) {
   return (
     <html lang="tr">
       <head>
-        {/* Google Web Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
+        {/* Mobile Specific Meta */}
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
         />
+        {/* Stylesheets */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
           rel="stylesheet"
-        />
-        {/* Icon Font Stylesheet */}
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
         />
         <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
           rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
         />
-        {/* Libraries Stylesheet */}
-        <link href="/lib/animate/animate.min.css" rel="stylesheet" />
-        <link
-          href="/lib/owlcarousel/assets/owl.carousel.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
-          rel="stylesheet"
-        />
-        {/* Customized Bootstrap Stylesheet */}
-        <link href="/css/bootstrap.min.css" rel="stylesheet" />
-        {/* Template Stylesheet */}
-        <link href="/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/flaticon.css" />
+        {/* Animate */}
+        <link rel="stylesheet" href="/css/animate.css" />
+        {/* Bootsnav */}
+        <link rel="stylesheet" href="/css/bootsnav.css" />
+        {/* Color style */}
+        <link rel="stylesheet" href="/css/color.css" />
+        {/* Custom stylesheet */}
+        <link rel="stylesheet" href="/css/custom.css" />
+        {/*[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+          <![endif]*/}
       </head>
-      <body>
+      <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
         <MainLayout>{children}</MainLayout>
-        {/* JavaScript Libraries */}
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/lib/wow/wow.min.js"></script>
-        <script src="/lib/easing/easing.min.js"></script>
-        <script src="/lib/waypoints/waypoints.min.js"></script>
-        <script src="/lib/counterup/counterup.min.js"></script>
-        <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="/lib/tempusdominus/js/moment.min.js"></script>
-        <script src="/lib/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-        {/* Template Javascript */}
-        <script src="/js/main.js"></script>
+
+        <Script
+          strategy="afterInteractive"
+          src="http://code.jquery.com/jquery-1.12.1.min.js"
+        />
+        <Script
+          strategy="afterInteractive"
+          src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        />
+        {/* <Script
+          strategy="afterInteractive"
+          src="http://maps.google.com/maps/api/js?sensor=true"
+        />
+        <Script strategy="afterInteractive" src="/js/gmaps.min.js" />
+        <Script strategy="afterInteractive" src="/js/mapscript.js" /> */}
+        <Script strategy="afterInteractive" src="/js/bootsnav.js" />
+        <Script strategy="afterInteractive" src="/js/main.js" />
       </body>
     </html>
   );
