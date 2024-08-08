@@ -27,8 +27,14 @@ const Navbar = () => {
         {/* End Atribute Navigation */}
         {/* Start Header Navigation */}
         <div className="navbar-header">
-          <Link className="navbar-brand" href="/">
-            <img src="/images/logo.png" className="logo" alt="" />
+          <Link
+            className="navbar-brand"
+            style={{ position: "relative" }}
+            href="/"
+          >
+            <div>
+              <img src="/images/header-logo.png" className="logo" alt="" />
+            </div>
           </Link>
         </div>
         {/* End Header Navigation */}

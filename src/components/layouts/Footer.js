@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
             <div className="contact_us">
-              <h4>Contact Us</h4>
+              <h4>Bizim ile İletişime Geçin</h4>
               <a href="">info@junkyburget.com</a>
               <address>
                 Jalan Awan Hijau, Taman OUG
@@ -67,13 +67,17 @@ const Footer = () => {
               <div className="footer-copyright">
                 <p className="wow fadeInRight" data-wow-duration="1s">
                   Made with
-                  <i className="fa fa-heart" />
+                  <i
+                    style={{ marginLeft: "10px", marginRight: "10px" }}
+                    className="fa fa-heart"
+                  />
                   by
-                  <a target="_blank" href="http://bootstrapthemes.co">
-                    Bootstrap Themes
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/yunus-emre-%C3%A7%C4%B1rac%C4%B1-a92860200/"
+                  >
+                    Yunus Emre Çıracı
                   </a>
-                  <br />
-                  2016. All Rights Reserved
                 </p>
               </div>
             </div>
