@@ -14,9 +14,9 @@ const Page = () => {
             <div className="col-md-8 col-md-offset-2">
               <div className="banner" style={{ paddingTop: "30px" }}>
                 <h1>MENÜ</h1>
-                <div className="inner_banner">
+                {/* <div className="inner_banner">
                   <div className="banner_content"></div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

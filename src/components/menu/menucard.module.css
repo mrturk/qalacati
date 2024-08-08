@@ -1,0 +1,68 @@
+.menuCard {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  color: black;
+  gap: 20px;
+}
+.cardImage {
+  min-width: 80px;
+  max-width: 90px;
+  width: 100%;
+}
+
+.cardImage > img {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.cardImage > img:hover {
+  scale: 1.2;
+}
+
+.menuContentWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1px 0px 5px 0px;
+  width: 100%;
+}
+
+.menuContent > div > h4 {
+  font-family: "Luckiest Guy";
+  position: relative;
+}
+
+.menuContent > div > p {
+  margin: 0 !important;
+  text-align: left;
+  max-width: 350px;
+  font-size: 12px;
+}
+
+.titleAndPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 10px;
+}
+
+.titleAndPrice::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #c7b7a1;
+  position: absolute;
+  top: 24px;
+}
+.titleAndPrice > p {
+  text-wrap: nowrap;
+}

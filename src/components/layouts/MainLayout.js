@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
     <div className="wrapper">
       <ClientLoadingComponent />
       <Navbar />
-      {children}
+      <div style={{ minHeight: "70vh" }}>{children}</div>
       <Footer />
       <div className="scrollup">
         <Link href="#">

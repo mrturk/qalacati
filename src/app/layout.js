@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
 
         <Script
           strategy="afterInteractive"
-          src="http://code.jquery.com/jquery-1.12.1.min.js"
+          src="https://code.jquery.com/jquery-1.12.1.min.js"
         />
         <Script
           strategy="afterInteractive"

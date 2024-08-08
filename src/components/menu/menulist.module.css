@@ -11,6 +11,7 @@
   display: flex;
   list-style: none;
   flex-direction: row;
+  max-width: fit-content;
   width: 100%;
 }
 
@@ -43,9 +44,27 @@
 }
 
 .scrollContainer {
-  max-width: 750px;
   width: 100%;
-  border-radius: 10px;
+  max-width: 1150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.show {
+  animation-name: showAnimate;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-direction: alternate;
+}
+
+@keyframes showAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideRight {
