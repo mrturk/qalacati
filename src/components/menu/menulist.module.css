@@ -1,13 +1,58 @@
+.tablistContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px 0px 20px;
+}
+
 .tabList {
   display: flex;
   list-style: none;
   flex-direction: row;
+  width: 100%;
 }
 
 .tabList > li > button {
+  transition: background-color 0.2s;
   color: black;
   border: 0;
-  background-color: transparent;
-  width: fit-content;
-  padding: 0px 50px 0px 50px;
+  background-color: #9b80617a;
+  height: 50px;
+  width: max-content;
+  padding: 0px 20px 0px 20px;
+}
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background-color: #a75a03;
+  position: absolute;
+  animation: slideRight 0.5s forwards; /* Animasyon ekleniyor */
+}
+
+.tabButton:hover {
+  background-color: #9b8061e0;
+}
+
+.scrollContainer {
+  max-width: 750px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+@keyframes slideRight {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
 }

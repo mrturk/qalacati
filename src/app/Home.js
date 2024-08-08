@@ -77,9 +77,9 @@ const Home = () => {
         </div>
       </section>
       {/* <section id="lock">
-        <h2>SERVING MORE THAN JUST BURGERS SINCE 1998</h2>
-        <p>Check out our opening hours and location address below.</p>
-      </section> */}
+  <h2>SERVING MORE THAN JUST BURGERS SINCE 1998</h2>
+  <p>Check out our opening hours and location address below.</p>
+</section> */}
       {/* <div id="ourmaps"></div> */}
     </>
   );

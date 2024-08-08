@@ -2,10 +2,12 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Link from "next/link";
+import ClientLoadingComponent from "../ClientLoadingComponent";
 
 const MainLayout = ({ children }) => {
   return (
     <div className="wrapper">
+      <ClientLoadingComponent />
       <Navbar />
       {children}
       <Footer />
