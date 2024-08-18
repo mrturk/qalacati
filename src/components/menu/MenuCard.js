@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./menucard.module.css";
-const MenuCard = () => {
+const MenuCard = ({ menuItem }) => {
   return (
     <div className={styles.menuCard}>
       <div className={styles.cardImage}>
@@ -9,12 +9,14 @@ const MenuCard = () => {
       <div className={styles.menuContentWrapper}>
         <div className={styles.menuContent}>
           <div className={styles.titleAndPrice}>
-            <h4>Hamburger</h4>
-            <p>150 TL</p>
+            <h4>{menuItem?.itemName}</h4>
+            <p>{menuItem?.singlePrice} TL</p>
           </div>
-          <div>
-            <p>qweqwe qweqwe qweqweqweqwe</p>
-          </div>
+          {menuItem?.description && (
+            <div>
+              <p>{menuItem.description}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

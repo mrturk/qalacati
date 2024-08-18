@@ -51,16 +51,25 @@ const Navbar = () => {
           <ul className="link">
             <li>
               <Link
-                href="/menu"
-                title="Menü"
+                href="/food-menu"
+                title="Yiyecek Menü"
                 style={{ color: pathname === "/menu/" ? "#d1b980" : "" }}
                 onClick={menuLinkClick}
               >
-                Menü
+                Yiyecek Menü
               </Link>
             </li>
-
             <li>
+              <Link
+                href="/drink-menu"
+                title="İçecek Menü"
+                style={{ color: pathname === "/menu/" ? "#d1b980" : "" }}
+                onClick={menuLinkClick}
+              >
+                İçecek Menü
+              </Link>
+            </li>
+            {/* <li>
               <Link
                 href="/contact"
                 title="Menü"
@@ -69,7 +78,7 @@ const Navbar = () => {
               >
                 İletişim
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

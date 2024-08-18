@@ -53,16 +53,26 @@ const Home = () => {
           {/* Forth section */}
           <div className="row forth_sec">
             <div className="col-sm-6">
-              <Link href="/menu" style={{ color: "white" }} title="Menü">
+              <Link href="/food-menu" style={{ color: "white" }} title="Menü">
                 <div className="menu">
                   <div className="menu_inner_content">
                     <span className="flaticon flaticon-burger" />
-                    <h2>Menü</h2>
+                    <h2>Yemek Menü</h2>
                   </div>
                 </div>
               </Link>
             </div>
             <div className="col-sm-6">
+              <Link href="/drink-menu" style={{ color: "white" }} title="Menü">
+                <div className="menu">
+                  <div className="menu_inner_content">
+                    <span className="flaticon flaticon-burger" />
+                    <h2>İçecek Menü</h2>
+                  </div>
+                </div>
+              </Link>
+            </div>
+            {/* <div className="col-sm-12">
               <Link href="/contact" style={{ color: "white" }} title="İletişim">
                 <div className="drinks">
                   <div className="menu_inner_content">
@@ -71,7 +81,7 @@ const Home = () => {
                   </div>
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
           {/* forth section end */}
         </div>

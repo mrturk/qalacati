@@ -6,7 +6,7 @@ const Footer = () => {
       {/* Container */}
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+          {/* <div className="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
             <div className="subscribe">
               <h4>Subscribe now</h4>
               <p>
@@ -31,8 +31,8 @@ const Footer = () => {
                 </div>
               </form>
             </div>
-          </div>
-          <div className="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
+          </div> */}
+          {/* <div className="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
             <div className="contact_us">
               <h4>Bizim ile İletişime Geçin</h4>
               <a href="">info@junkyburget.com</a>
@@ -43,8 +43,8 @@ const Footer = () => {
                 Malaysia <br />
               </address>
             </div>
-          </div>
-          <div className="col-lg-4 col-sm-4 col-xs-12 pull-right">
+          </div> */}
+          <div className="col-lg-12 col-sm-12 col-xs-12 pull-right">
             <div className="basic_info">
               <a href="">
                 <img
@@ -54,14 +54,18 @@ const Footer = () => {
                 />
               </a>
               <ul className="list-inline social">
-                <li>
+                {/* <li>
                   <a href="" className="fa fa-facebook" />
                 </li>
                 <li>
                   <a href="" className="fa fa-twitter" />
-                </li>
+                </li> */}
                 <li>
-                  <a href="" className="fa fa-instagram" />
+                  <a
+                    href="https://www.instagram.com/qalacatiotel/"
+                    target="_blank"
+                    className="fa fa-instagram"
+                  />
                 </li>
               </ul>
               <div className="footer-copyright">
