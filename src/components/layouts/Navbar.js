@@ -53,7 +53,7 @@ const Navbar = () => {
               <Link
                 href="/food-menu"
                 title="Yiyecek Menü"
-                style={{ color: pathname === "/menu/" ? "#d1b980" : "" }}
+                style={{ color: pathname === "/food-menu/" ? "#d1b980" : "" }}
                 onClick={menuLinkClick}
               >
                 Yiyecek Menü
@@ -63,7 +63,7 @@ const Navbar = () => {
               <Link
                 href="/drink-menu"
                 title="İçecek Menü"
-                style={{ color: pathname === "/menu/" ? "#d1b980" : "" }}
+                style={{ color: pathname === "/drink-menu/" ? "#d1b980" : "" }}
                 onClick={menuLinkClick}
               >
                 İçecek Menü
